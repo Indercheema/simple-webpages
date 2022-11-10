@@ -1,0 +1,341 @@
+@import "./base.css";
+
+/* -------------------------------*/
+/*Banner                          */
+/* -------------------------------*/
+
+.banner {
+    background: #fff url("../img/banner-top.jpg") center center / cover no-repeat;
+    color: #000;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    height: 300px;
+    font-size: 40px;
+}
+
+/* -------------------------------*/
+/*Column Section                  */
+/* -------------------------------*/
+
+.intro {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.section-columns {
+    margin: 80px 0;
+}
+
+
+
+.column1 , .column2 {
+    flex-grow: 1;
+    padding: 20px;
+    width: calc(50% - 10px);
+    border-radius: 6px;
+}
+
+.column1 {
+    display: grid;
+    place-content: center;
+    box-shadow: 0px 20px 48px 0px rgb(0 0 0 / 0.2);
+
+}
+.column2 {
+    box-shadow: 0px 20px 48px 0px rgb(0 0 0 / 0.2);
+}
+
+
+.one {
+    background-color: #fff;
+}
+.two {
+    background: #fff;
+}
+
+
+.box {
+    margin-left: 10px;
+    text-align: left;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+
+
+h3 , .fields {
+    font-weight: normal;
+    text-align: left;
+}
+.fields {
+    margin-top: 10px;
+}
+
+.social-icons {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 20px 48px 0px rgb(0 0 0 / 0.2);
+    transition: all 0.25s ease-in-out;
+}
+
+.social-icons:hover {
+    translate: 0px -10px;
+}
+
+div.social-icons + div.social-icons {
+    margin-top: 20px;
+}
+
+div.box > h2 {
+    margin-bottom: 15px;
+}
+
+div.box {
+    padding: 20px;
+}
+
+.social-text {
+    font-size: 20px;
+}
+
+.card-icon  {
+    color: #ffd238;
+
+
+}
+
+.card-icon2  {
+    color: #38c9ff;
+
+ 
+}
+
+.card-icon3 {
+    color: #3ADC87;
+}
+.card-icon4 {
+    cursor: pointer;
+}
+
+div.card-icon4 > i + i {
+    margin-left: 18px;
+    margin-top: 25px;
+}
+
+div.social-icons > h2 , a {
+    margin-top: 10px;
+}
+
+div.social-icons > div + a  {
+    margin-top: 25px;
+}
+
+
+/* -------------------------------*/
+/*Form                            */
+/* -------------------------------*/
+
+
+form {
+    font-size: 0;
+    margin: 0 auto;
+}
+
+
+input[type="text"],input[type="email"]  {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid ;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #000;
+    text-align: left;
+    background: #fff ;
+    background-size: 15px;
+    transition: border-color 0.25s ease-in-out;
+}
+
+input[type="text"]:focus ,input[type="email"]:focus {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+ 
+input[type="button"] {
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    width: 140px;
+    border-radius: 50px;
+    border: 1px solid #3865FF;
+    background-color: #3865FF;
+    color: #fff;
+}
+input[type="button"]:hover {
+    background-color: #0035e9;
+    transition: background-color 0.25s ease-in-out;
+}
+
+
+
+
+input[type="reset"] {
+    margin-top: 30px;
+    margin-right: 14px;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    width: 140px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #3865FF;
+    color: #000;
+}
+
+input[type="reset"]:hover {
+    background-color: #0035e9;
+    transition: background-color 0.25s ease-in-out;
+    color: #fff;
+}
+
+
+.form-btn {
+    text-align: left;
+}
+
+
+
+
+/* -------------------------------*/
+/*  Call to action                */
+/* -------------------------------*/
+
+
+.banner2-bg {
+    padding: 20px;
+}
+
+.banner2-text {
+    font-size: 20px;
+    margin-left: 10px;
+    text-align: left;
+    padding: 20px;
+    color: #fff;
+}
+
+.banner-text {
+    align-items: center;
+}
+
+
+.banner2 {
+    min-height: 200px;
+    margin: 80px 0;
+    background: #fff url("../img/banner.jpg") center center / cover no-repeat;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.btn-banner {
+    margin-top: 10px;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    width: 140px;
+    border-radius: 50px;
+    border: 1px solid #3865FF;
+    background-color: #3865FF;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-banner:hover {
+    background-color: #0035e9;
+    transition: background-color 0.25s ease-in-out;
+}
+
+
+
+
+/* -------------------------------*/
+/*  Media queries                 */
+/* -------------------------------*/
+
+
+/* 
+  980px and down
+*/
+
+@media (max-width: 980px) {
+    .column1 , .column2 {
+        width: 100%;
+    }
+    .banner {
+        font-size: 20px;
+    }
+
+    .box > img {
+        width: 400px;
+    }
+
+}
+    
+
+/* 
+  768px and down
+*/
+
+@media (max-width: 768px) {
+
+    .box > h2 {
+        font-size: 22px;
+    }
+
+    .box > p {
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 11px;
+    }
+
+    
+
+}
+    
+
+/* 
+  480px and down
+*/
+
+@media (max-width: 580px) {
+    .column1 , .column2 {
+        width: 100%;
+    }
+    
+    .banner2-text > h2 {
+        font-size: 20px;
+    }
+
+    .banner2-text > p {
+        font-size: 13px;
+    }
+    
+
+    .banner {
+        font-size: 20px;
+    }
+
+}
